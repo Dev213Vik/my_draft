@@ -1,0 +1,206 @@
+/*селектор {параметры(свойство и: значение)}*/
+/*обнуление оступов, границ*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+/**/
+*,*:before,*:after{
+	-moz-box-sizeing:border-box;
+	-webkit-box-sizeing: border-box;
+	-box-sizing: border-box;
+} 
+/*убираем линии ободки некоторых браузеров*/
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+/*печесление тегов и создание их блочными*/
+nav, footer, header, aside{display: block;}
+/*обращаясь к html и body применяем к ним параметры, уравнивающие их поведение по отношению к шрифтам и запред самовольно улечичивать  */
+html, body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust:100%;
+	-moz-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+}
+/* обращение к тегам и указ наследовать семейство шрифта*/
+input, button, textarea{font-family: inherit;}
+/*разные доп указаться*/
+/*чистка маркерованных списков*/
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+/*обнуление заголовков*/
+h1, h2, h3, h4, h5, h6{font-size: inherit; font-weight: 400;}
+
+/*------------------------------------------------------------*/
+
+body{
+	width: 1440px;
+	height: 1700px;
+	background: url('../img/Ellipse_1_copy.png') 181px 064px  no-repeat, #e8e8e8; 
+	
+
+}
+h1{
+	width: 721px;/*Устанавливает ширину блочных тегов и некоторыйх строчных (например img*/
+	height: 75px;/*Устанавливает высоту блочных тегов и некоторыйх строчных (например img)*/
+	color: #273d46;/*Определяет цвет текста*/
+	font-family: "Times New Roman PSMT";/*"Имя шрифта", "Имя шрифта", тип шрифта*/
+	font-size: 36px;/*Определяет размер шрифта элемента.*/
+	font-weight: 400;/*Устанавливает насыщенность шрифта*/
+	font-style: normal;/*Определяет начертание шрифта — обычное, курсивное или наклонное*/
+	letter-spacing: normal;/*Определяет интервал между символами (буквами). Используется когда нужно разрядить текст*/
+	line-height: 50px;/*Устанавливает межстрочный интервал текста. Широко применяется при верстке текста*/
+	text-align: center;/*Определяет горизонтальное выравнивание текста в пределах элемента*/
+	
+}
+.logo{
+	margin: 168px 702px 0 671px;
+	width: 67px;
+	height: 10px;
+	opacity: 0.6;
+	color: #273d46;
+	font-family: "Arial MT";
+	font-size: 14px;
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	font-style: normal;
+	letter-spacing: 2.8px;
+	line-height: normal;
+}
+.title{
+	margin: 28px 372px 0 347px;
+
+}
+.pictures{
+	margin: 77px 310px 0 289px;
+	box-shadow: 0 15px 65px rgba(15, 16, 16, 0.15);
+	width: 841px;
+	height: 561px;
+}
+img{
+	margin: 10px;
+	width: 821px;
+	height: 541px;
+}
+.text{
+	margin: 97px 370px 0 334px;
+	
+}
+.text_one{
+	width: 736px;
+	height: 257px;
+	opacity: 0.8;
+	color: #273d46;
+	font-family: "Times New Roman PSMT";
+	font-size: 24px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 40px;
+	text-align: left;
+	
+}
+
+.one{
+	margin: 0 0 25px 0;
+}
+.spisok{
+	margin: 62px 652px 0 330px;
+}
+.sp{
+	width: 421px;
+	height: 20px;
+	color: #273d46;
+	font-family: "Arial MT";
+	font-size: 20px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 36px;
+	text-align: left;
+}
+
+.sp li{
+	
+	margin: 0 0 15px 0;
+	background: url('../img/ico/li.svg')left 11px no-repeat;
+	padding: 0px 0px 0px 30px;
+}
+.string1{
+	color: #273d46;
+	width: 421px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+	
+}
+.string2{
+	
+	color: #80b7b3;
+	font-style: italic;
+	
+}
+.string3{
+	
+	font-weight: bold;
+	
+}
+.string4{
+
+	opacity: 0.3;
+	text-decoration: line-through;
+	
+}
+.button{
+	margin: 200px 911px 137px 330px;
+	width: 150px;
+	height: 44px;
+
+	/*
+	background: #78c7c0;
+	
+	
+	*/
+	
+}
+.button button {
+	box-shadow: 0 6px 40px rgba(128, 183, 179, 0.54);
+	border-radius: 15px 15px;
+	padding: 0 0 0 15px;
+	width: 150px;
+	height: 44px;
+	
+	
+	background-color: #78c7c0;
+	color: #ffffff;
+	font-family: "Arial MT";
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 40px;
+	text-align: left;
+	text-transform: uppercase;
+
+}
+.button img{
+	margin: 12px 0 0 10px;
+	width: 21px;
+	height: 14px;
+	background: url('../img/ico/Shape_2.png') left no-repeat ;
+	background-color: #78c7c0;
+	opacity: 0.8;
+}
