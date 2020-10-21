@@ -92,7 +92,13 @@ p{
 	font-weight: 400;
 
 }
+.text-bloc2 p{
+	width: 600px;
+	margin: 30px 20% 20px;
+	font-size: 20px;
+	text-align: left;
 
+}
 
 
 
