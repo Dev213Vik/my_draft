@@ -1,0 +1,241 @@
+/*селектор {параметры(свойство и: значение)}*/
+/*обнуление оступов, границ*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+/**/
+*,*:before,*:after{
+	-moz-box-sizeing:border-box;
+	-webkit-box-sizeing: border-box;
+	-box-sizing: border-box;
+} 
+/*убираем линии ободки некоторых браузеров*/
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+/*печесление тегов и создание их блочными*/
+nav, footer, header, aside{display: block;}
+/*обращаясь к html и body применяем к ним параметры, уравнивающие их поведение по отношению к шрифтам и запред самовольно улечичивать  */
+html, body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust:100%;
+	-moz-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+}
+/* обращение к тегам и указ наследовать семейство шрифта*/
+input, button, textarea{font-family: inherit;}
+/*разные доп указаться*/
+/*чистка маркерованных списков*/
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+/*обнуление заголовков*/
+h1, h2, h3, h4, h5, h6{font-size: inherit; font-weight: 400;}
+
+/*------------------------------------------------------------*/
+body{
+	background-color: #D3D3D3;
+	max-width: 800px;
+	margin: 50px auto;
+	height: 1000px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.up-title {
+	max-width: 600px;
+	margin: 50px auto;
+	font-size: 22px;
+	
+}
+h2{
+	margin: 15px 0px ; 
+	font-size:30px ;
+	text-align: centr;
+	
+}
+
+
+
+
+
+
+.body-form {
+	width: 250px;
+	height: 180px;
+	margin: 0px auto;
+	background-color: #fff;
+}
+.forma {
+	margin: 0px auto;
+	max-width: 250px;
+	max-height: 200px;
+	word-spacing: 10px;
+}	
+.header {
+	background-color: rgb(165, 171,97);
+	color: #FFFFFF;
+	height: 30px;
+}
+.header__text {
+	text-transform: uppercase;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-align: center;
+	word-spacing: 100px;
+	padding: 7px;
+
+}
+.icon{
+	background: rgb(144, 150,89);
+	background-image: url('../img/s-icon.png');
+	float: right;
+	width: 30px;
+	height: 30px;
+	background-position: 85px -3px;
+}
+.text {
+	color: rgb(82, 93, 103);
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	margin: 10px 15px;
+}
+.text__title {
+	font-weight:600;
+	margin: 0px 0px 5px 0px;
+
+}
+.text__subtitle {
+	text-align: left;
+	word-spacing: 4px;
+	line-height: 16px;
+	font-size: 13px;
+	margin: 0px 10px 23px 0px;
+}
+.bar {
+	margin: 10px 0px 0px 0px;
+	color: rgb(82, 93, 103);
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	
+}
+.bar ul{
+	display: flex;
+
+	width: 212px;
+	height: 25px;
+	float: left;
+	font-weight:600;
+	font-size: 11px;
+
+}
+.bar li{
+	margin: 0px 0px 0px 9px;
+	
+	text-align: center;
+	
+	width: 100px;
+	height: 25px;
+	
+
+
+}
+.row1 {
+	background-image: url('../img/s-icon.png');
+	background-position: 0px -6px;
+	float: left;
+	width: 18px;
+	height: 17px;
+}
+.row2 {
+	background-image: url('../img/s-icon.png');
+	background-position: 53px -6px;
+	float: left;
+	width: 21px;
+	height: 22px;
+	
+}
+.row3 {
+
+	background-image: url('../img/s-icon.png');
+	background-position: -18px 0px;
+	float: left;
+	width: 21px;
+	height: 22px;
+}
+
+
+.row4 {
+
+	background-image: url('../img/s-icon.png');
+	background-position: 103px 0px;
+	float: left;
+	width: 21px;
+	height: 22px;
+}
+.low {
+	background-image: url('../img/s-icon.png');
+	background-position: 32px -2px;
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin: 11px 0px 0px 0px;
+}
+
+
+
+
+
+
+.footer{
+	margin: 50px auto;
+	max-width: 600px;
+	font-size: 20px;
+}
+.foot-text1 {
+	font-size: 20px;
+	margin: 20px 100px 20px 100px;
+}
+.foot-img {
+	margin: auto 30%; 
+}
+.foot-text2 {
+	text-align: left;
+	margin: 30px  auto;
+	
+
+}
+.error li{
+	margin: 0px 0px 15px 20px;
+	background: url('../img/01.png') left 0px no-repeat;
+	padding: 0px 0px 15px 30px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
