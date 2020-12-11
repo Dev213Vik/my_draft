@@ -122,7 +122,7 @@ body{
 }
 .body-flex {
 	min-height: 100%;/*минимальная высота страници это высота экрана*/
-	overflow: hidden;/**/
+	overflow: hidden;/*содержимое не вываливается за граници блока*/
 	display: flex;/*флекс отображение(гибкий)*/
 	flex-direction: column;/*компоненты в колонки*/
 }
@@ -261,15 +261,8 @@ body{
 .footer__text {
 	color: #445162;
 	font-size: 12px;
-	letter-spacing: 0.3px
+	letter-spacing: 0.3px;
 }
-
-
-
-
-
-
-
 
 
 

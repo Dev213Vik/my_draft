@@ -1,0 +1,160 @@
+@import "nullstyle.scss"
+@import "ibg.sass"
+
+
+body.lock
+	@media (max-width: 767px)
+		overflow: hidden
+
+.obolochka 
+	overflow: hidden
+	min-height: 100%
+	@media (max-width: 767px)
+		overflow: hidden
+
+.container
+	max-width: 1130px
+	padding: 0px 15px
+
+@import "header.sass"
+
+
+.page
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	display: flex
+	flex-direction: column
+
+.main-screen
+	flex: 1 0 100%
+	position: relative
+	&__bg 
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+
+.content 
+
+
+.begin 
+	padding: 120px 0
+	background: #f7f7f7
+	@media(max-width: 930px)
+		padding: 70px 0
+	@media(max-width: 650px)
+		padding: 30px 0
+	&__block 
+.container 
+	margin: 0 auto
+	
+.block 
+	text-align: center
+	&__icon 
+		img
+			max-width: 150px
+	&__title 
+		color: #353738
+		font-size: 20px
+		font-weight: 700
+		line-height: 20px
+		text-transform: uppercase
+		letter-spacing: 3.5px
+		margin: 0px 0px 15px 0px
+	&__text 
+		color: #353738
+		font-size: 20px
+		line-height: 34px
+		&_j
+			text-align: justify
+			font-size: 16px
+			line-height: 34px
+			&:after
+				display: block
+				margin: 30px auto  0 auto
+				content:''
+				width: 50px
+				height: 1px
+				background-color: #353738
+	@media (max-width: 1500px)
+		&__text 
+			&_j
+				&:after
+					margin: 15px auto 0px auto
+
+.brands 
+	&__row 
+		display: flex
+	&__column 
+		flex: 0 1 33.333%
+	&__column
+		&_b 
+			flex: 0 1 66.667%
+	&__item 
+
+	&__content 
+		padding: 70px 65px 55px 65px
+		position: relative
+		&:after
+			content:''
+			position: absolute
+			bottom: -10px
+			left: 50%
+			margin: 0px 0px 0px -10px
+			width: 0
+			height: 0
+			border-left: 10px solid transparent
+			border-right: 10px solid transparent
+			border-top: 10px solid #fff
+	&__image 
+		padding: 0px 0px 37.50% 0px
+	@media (max-width: 1500px)
+		&__content
+			padding: 70px 35px 30px 35px
+	@media (max-width: 1100px)
+		&__row 
+			flex-direction: column
+.item 
+	height: 100%
+	display: block
+	position: relative
+	&__logo 
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		display: flex
+		justify-content: center
+		align-items: center
+		transition-duration: 0.3s
+		background-color: rgba(100, 194, 158, 0.3)
+		z-index: 2
+		opacity: 0
+		visibility: hidden
+	&__image 
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+	&:hover
+		.item__logo
+			opacity: 1
+			visibility: visible
+	@media (max-width: 1100px)
+		height: auto
+		padding: 0px 0px 70% 0px
+
+.ibg 
+
+
+
+
+
+
+.footer 
