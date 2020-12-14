@@ -9,12 +9,12 @@ body.lock
 .obolochka 
 	overflow: hidden
 	min-height: 100%
-	@media (max-width: 767px)
-		overflow: hidden
+	
 
 .container
 	max-width: 1130px
 	padding: 0px 15px
+	margin: 0 auto
 
 @import "header.sass"
 
@@ -27,6 +27,7 @@ body.lock
 	left: 0
 	display: flex
 	flex-direction: column
+	min-width: 0
 
 .main-screen
 	flex: 1 0 100%
@@ -49,8 +50,8 @@ body.lock
 	@media(max-width: 650px)
 		padding: 30px 0
 	&__block 
-.container 
-	margin: 0 auto
+
+	
 	
 .block 
 	text-align: center
@@ -166,16 +167,27 @@ body.lock
 		.item__logo
 			opacity: 1
 			visibility: visible
+				
 	@media (max-width: 1100px)
 		height: auto
 		padding: 0px 0px 70% 0px
+		.item__logo
+			img 
+				max-width: 100px
 
-.slaider
+.slaider //swiper
+	text-align: center
 	background-color: #f7f7f7
 	padding: 120px 0px 60px 0px
-	&__body 
-	&__item 
-		text-align: center
+	@media(max-width: 930px)
+			padding: 60px 0px 30px 0px
+	@media(max-width: 630px)
+			padding: 30px 0px 30px 0px
+	&__body //wrapper
+
+
+	&__item //slide
+
 	&__icon 
 		margin: 0px 0px 35px 0px
 		img 
@@ -189,15 +201,60 @@ body.lock
 			font-weight: 300
 			color: #848789
 	&__text 
+		padding: 0 100px
 		text-align: center
 		color: #848789
 		font-size:24px
 		font-style: italic
 		line-height: 34px
+		@media (max-width:1200px)
+			padding: 0 80px
+		@media(max-width: 930px)
+			padding: 15px 30px
+		@media(max-width: 630px)
+			padding: 20px 0px
+
+
+	.swiper-button-next::after,
+	.swiper-button-prev::after
+		color: grey
+		font-size: 50px
+		@media (max-width: 930px)
+			display: none
+		
+	
+	.swiper-pagination
+		padding: 0px 0px 20px 0px
+		bottom: 0
+		&-bullet
+			width: 20px
+			height: 20px
+			line-height: 20px
+			font-size: 14px
+			background-color: grey
+
+.shop 
+	width:100%
+	&__body 
+		display: flex
+	&__column 
+		flex: 0 1 16.666%
+		&_b 
+			flex: 0 1 33.333%
+	&__block 
+	&__footer 
+.blok-shop 
+	&__row 
+		display: flex
+	&__column 
+		flex: 0 1 50%
+	&__item 
+		&_b
+			padding: 0px 0px 100% 0px
 
 
 
-
+.shop_btn 
 
 
 
