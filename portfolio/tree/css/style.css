@@ -287,9 +287,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 120px 0;
   background: #f7f7f7;
 }
+@media (max-width: 1100px) {
+  .begin {
+    padding: 80px 0;
+  }
+}
 @media (max-width: 930px) {
   .begin {
-    padding: 70px 0;
+    padding: 60px 0;
   }
 }
 @media (max-width: 650px) {
@@ -402,6 +407,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   transition-duration: 0.3s;
@@ -422,10 +428,6 @@ h1, h2, h3, h4, h5, h6 {
   visibility: visible;
 }
 @media (max-width: 1100px) {
-  .item {
-    height: auto;
-    padding: 0px 0px 70% 0px;
-  }
   .item .item__logo img {
     max-width: 100px;
   }
@@ -482,7 +484,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 630px) {
   .slaider__text {
-    padding: 20px 0px;
+    padding: 0px;
   }
 }
 .slaider .swiper-button-next::after,
@@ -508,9 +510,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: grey;
 }
 
-.shop {
-  width: 100%;
-}
 .shop__body {
   display: flex;
 }
@@ -520,12 +519,128 @@ h1, h2, h3, h4, h5, h6 {
 .shop__column_b {
   flex: 0 1 33.333%;
 }
-.blok-shop__row {
+.shop__footer {
+  padding: 75px 0px;
+  text-align: center;
+  background-color: #282f53;
+}
+.shop_btn {
+  display: inline-block;
+  height: 50px;
+  line-height: 48px;
+  letter-spacing: 2.8px;
+  color: #fff;
+  padding: 0px 60px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+}
+@media (max-width: 1100px) {
+  .shop__body {
+    flex-wrap: wrap;
+  }
+  .shop__column {
+    flex: 0 1 50%;
+  }
+  .shop__column:first-child {
+    flex: 1 1 100%;
+  }
+  .shop__column:last-child {
+    flex: 1 1 100%;
+  }
+  .shop_btn {
+    padding: 0px 30px;
+  }
+  .shop__footer {
+    padding: 50px 0px;
+  }
+}
+
+.block-shop {
+  height: 100%;
+}
+.block-shop__row {
   display: flex;
 }
-.blok-shop__column {
+.block-shop__column {
   flex: 0 1 50%;
 }
-.blok-shop__item_b {
+.block-shop__item {
+  height: auto;
+  padding: 0px 0px 50% 0px;
+}
+.block-shop__item .item__logo img {
+  max-width: 100px;
+}
+.block-shop__item_b {
+  padding: 0px 0px 200% 0px;
+}
+.block-shop__item_l {
   padding: 0px 0px 100% 0px;
+}
+
+.subform__body {
+  padding: 110px 0;
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: center;
+}
+.subform__logo {
+  margin: 0px 0px 35px 0px;
+}
+.subform__lable {
+  color: grey;
+  font-size: 24px;
+  font-style: italic;
+  margin: 0px 0px 30px 0px;
+}
+.subform__form {
+  display: flex;
+}
+.subform__input {
+  flex: 1 1 100%;
+  padding: 0px 10px;
+}
+.subform__input input {
+  width: 85%;
+  height: 68px;
+  text-align: left;
+  border: 1px solid #64c29e;
+  background-color: #fff;
+  padding: 0px 25px;
+  color: #929292;
+  font-size: 20px;
+  font-style: italic;
+}
+.subform__button {
+  flex: 0 0 125px;
+}
+.subform__btn {
+  width: 100%;
+  height: 70px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 69px;
+  background-color: #64c29e;
+}
+@media (max-width: 750px) {
+  .subform__body {
+    padding: 50px 0px;
+  }
+}
+@media (max-width: 500px) {
+  .subform__logo img {
+    max-width: 160px;
+  }
+  .subform__form {
+    flex-direction: column;
+  }
+  .subform__input {
+    padding: 0px 0px 10px 0px;
+  }
+  .subform__input input {
+    padding: 0px 20px;
+  }
 }
