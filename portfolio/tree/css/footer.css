@@ -1,0 +1,6 @@
+.footer__row {
+  display: flex;
+  background-color: #f7f7f7;
+  padding: 100px 0px;
+  align-items: center;
+}
