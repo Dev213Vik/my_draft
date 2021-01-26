@@ -1,0 +1,231 @@
+@import "nullstyle.scss"
+
+
+
+body 
+	font-family: PT Sans 
+	font-style: normal
+	font-weight: bold
+	font-size: 14px
+
+.obolochka
+	margin: 50px auto
+	max-width: 600px
+	max-height: 788px
+	overflow: hidden
+
+	display: flex
+	flex-direction: column
+
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15)
+	border-radius: 5px
+	@media(max-width: 667px)
+		max-height: 900px
+		margin: 30px auto
+		max-width: 500px
+	@media(max-width: 550px)
+		max-height: 900px
+		margin: 15px auto
+		max-width: 400px
+
+.container 
+	max-width: 600px
+	margin: 0px auto
+	
+
+
+
+.content 
+	margin: 0px 0px 30px 0px
+	flex: 1 1 auto
+
+.header 
+	&_row 
+		display: flex
+		padding: 18px
+		justify-content: space-between
+
+	&_logo 
+		@media(max-width: 550px)
+			margin: 0 auto
+	&_href
+		padding: 5px 0px 0px 0px 
+		font-size: 13px
+		font-weight: 400
+		line-height: 20px
+		color: #8F8F8F
+		@media(max-width: 550px)
+			display: none
+			
+.decor
+	background: linear-gradient(180deg, #FFCC00 -27.5%, #FBFF21 180%)
+	margin:0 auto
+	height: 8px
+
+.title 
+	&_body
+		margin: 30px
+		@media(max-width: 550px)
+			margin: 10px 30px
+	&_hi
+		font-weight: 700
+		font-size: 28px
+		line-height: 48px
+		letter-spacing: 0.7px
+		color: #313131
+	&_text 
+		font-weight: 400
+		font-size: 22px
+		line-height: 26px
+		@media(max-width: 550px)
+			font-size: 20px
+			line-height: 22px
+
+.what 
+	margin: 30px
+	padding: 15px
+	background: #FFFFFF
+	box-shadow: 0px 0px 20px rgba(143, 143, 143, 0.1)
+	border-radius: 10px
+	@media(max-width: 550px)
+		margin: 15px
+		padding: 10px
+	&_row 
+		display: flex
+		@media(max-width: 425px)
+			flex-direction: column
+
+
+
+	&_img 
+		flex: 0 0 113px
+		img
+			max-width: 100%
+		@media(max-width: 425px)
+			text-align: center
+	&_body 
+		padding: 5px 0px 0px 26px
+		flex: 1 1 auto
+		@media(max-width: 425px)
+			padding: 5px 0px 0px 10px
+	&_title 
+		font-size: 16px
+		font-weight: 700
+		line-height: 20px
+		letter-spacing: 0.09000001102685928px
+		color: #4A4A4A
+	&_company 
+		font-size: 13px
+		font-weight: 400
+		line-height: 20px
+		color: #777777
+	&_text 
+		margin: 8px 0px 0px 0px
+		font-size: 13px
+		font-weight: 400
+		line-height: 17px
+		color:  #3E3E3E
+
+
+
+
+.footer 
+	background: #F4F4F4
+	padding: 0px 0px 30px 0px
+
+	&_row 
+		display: flex
+		flex-direction: column
+	&_text 
+		padding: 26px 36px 10px 30px
+		font-size: 13px
+		font-weight: 400
+		line-height: 20px
+		color: #7F7F7F
+		@media(max-width: 550px)
+			padding: 15px 30px 10px 30px
+		span
+			font-family: Blogger Sans
+			text-decoration: underline
+			font-size: 13px
+			font-style: normal
+			font-weight: 400
+			line-height: 20px
+			color: #8F8F8F
+		&:after
+			content:''
+			margin: 0 auto
+			width: 540px
+			height: 1px
+			background: #E7E7E7
+			display: inline-block
+			@media (max-width: 667px)
+				max-width: 100%
+			@media(max-width: 550px)
+				max-width: 100%
+			@media(max-width: 425px)
+				max-width: 100%
+
+
+	&_prova 
+		padding: 10px 0px 0px 0px
+		margin: 0 auto
+		height: 32px
+		font-size: 13px
+		line-height: 20px
+		color: #7F7F7F
+		@media(max-width: 425px)
+			padding: 5px 60px 
+			text-align: center
+
+
+	&_social 
+
+.social
+	&_row
+		display: flex
+		justify-content: space-between
+		@media(max-width: 667px)
+			flex-direction: column
+			align-items: center
+
+	&_body 
+		display: flex
+		align-items:center
+		margin: 0px 0px 0px 30px
+		@media(max-width: 667px)
+			margin: 0
+
+	&_whatsapp 
+		padding: 7px 0px 0px 8px
+	&_telegram 
+		padding: 9px 0px 0px 7px
+	&_vk
+		padding: 11px 0px 0px 7px 
+	&_facebook 
+		padding: 10px 0px 0px 10px
+
+	&_market 
+		margin: 0px 30px 0px 0px
+		display: flex
+		align-items: center 
+		@media(max-width: 667px)
+			margin: 0
+
+	&_google 
+		padding: 0px 15px 0px 0px
+		img
+			max-width: 120px
+	&_apple
+		img
+			max-width: 120px
+
+.RR
+	margin: 5px 8px
+	width: 40px
+	height: 40px
+	border-radius: 50%
+	border: 2px solid #8F8F8F
+	box-sizing: border-box
+
+

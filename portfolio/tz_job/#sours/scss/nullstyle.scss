@@ -1,0 +1,45 @@
+/*селектор {параметры(свойство и: значение)}*/
+/*обнуление оступов, границ*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+/**/
+*,*:before,*:after{
+	-moz-box-sizeing:border-box;
+	-webkit-box-sizeing: border-box;
+	-box-sizing: border-box;
+} 
+/*убираем линии ободки некоторых браузеров*/
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+/*печесление тегов и создание их блочными*/
+nav, footer, header, aside{display: block;}
+/*обращаясь к html и body применяем к ним параметры, уравнивающие их поведение по отношению к шрифтам и запред самовольно улечичивать  */
+html, body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust:100%;
+	-moz-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+}
+/* обращение к тегам и указ наследовать семейство шрифта*/
+input, button, textarea{font-family: inherit;}
+/*разные доп указаться*/
+/*чистка маркерованных списков*/
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+/*обнуление заголовков*/
+h1, h2, h3, h4, h5, h6{font-size: inherit; font-weight: 400;}
+
+/*------------------------------------------------------------*/

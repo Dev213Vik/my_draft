@@ -1,0 +1,370 @@
+@charset "UTF-8";
+/*селектор {параметры(свойство и: значение)}*/
+/*обнуление оступов, границ*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/**/
+*, *:before, *:after {
+  -moz-box-sizeing: border-box;
+  -webkit-box-sizeing: border-box;
+  -box-sizing: border-box;
+}
+
+/*убираем линии ободки некоторых браузеров*/
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+/*печесление тегов и создание их блочными*/
+nav, footer, header, aside {
+  display: block;
+}
+
+/*обращаясь к html и body применяем к ним параметры, уравнивающие их поведение по отношению к шрифтам и запред самовольно улечичивать  */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* обращение к тегам и указ наследовать семейство шрифта*/
+input, button, textarea {
+  font-family: inherit;
+}
+
+/*разные доп указаться*/
+/*чистка маркерованных списков*/
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*обнуление заголовков*/
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*------------------------------------------------------------*/
+body {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.obolochka {
+  margin: 50px auto;
+  max-width: 600px;
+  max-height: 788px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+@media (max-width: 667px) {
+  .obolochka {
+    max-height: 900px;
+    margin: 30px auto;
+    max-width: 500px;
+  }
+}
+@media (max-width: 550px) {
+  .obolochka {
+    max-height: 900px;
+    margin: 15px auto;
+    max-width: 400px;
+  }
+}
+
+.container {
+  max-width: 600px;
+  margin: 0px auto;
+}
+
+.content {
+  margin: 0px 0px 30px 0px;
+  flex: 1 1 auto;
+}
+
+.header_row {
+  display: flex;
+  padding: 18px;
+  justify-content: space-between;
+}
+@media (max-width: 550px) {
+  .header_logo {
+    margin: 0 auto;
+  }
+}
+.header_href {
+  padding: 5px 0px 0px 0px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #8F8F8F;
+}
+@media (max-width: 550px) {
+  .header_href {
+    display: none;
+  }
+}
+
+.decor {
+  background: linear-gradient(180deg, #FFCC00 -27.5%, #FBFF21 180%);
+  margin: 0 auto;
+  height: 8px;
+}
+
+.title_body {
+  margin: 30px;
+}
+@media (max-width: 550px) {
+  .title_body {
+    margin: 10px 30px;
+  }
+}
+.title_hi {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 48px;
+  letter-spacing: 0.7px;
+  color: #313131;
+}
+.title_text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+@media (max-width: 550px) {
+  .title_text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.what {
+  margin: 30px;
+  padding: 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(143, 143, 143, 0.1);
+  border-radius: 10px;
+}
+@media (max-width: 550px) {
+  .what {
+    margin: 15px;
+    padding: 10px;
+  }
+}
+.what_row {
+  display: flex;
+}
+@media (max-width: 425px) {
+  .what_row {
+    flex-direction: column;
+  }
+}
+.what_img {
+  flex: 0 0 113px;
+}
+.what_img img {
+  max-width: 100%;
+}
+@media (max-width: 425px) {
+  .what_img {
+    text-align: center;
+  }
+}
+.what_body {
+  padding: 5px 0px 0px 26px;
+  flex: 1 1 auto;
+}
+@media (max-width: 425px) {
+  .what_body {
+    padding: 5px 0px 0px 10px;
+  }
+}
+.what_title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.090000011px;
+  color: #4A4A4A;
+}
+.what_company {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #777777;
+}
+.what_text {
+  margin: 8px 0px 0px 0px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #3E3E3E;
+}
+
+.footer {
+  background: #F4F4F4;
+  padding: 0px 0px 30px 0px;
+}
+.footer_row {
+  display: flex;
+  flex-direction: column;
+}
+.footer_text {
+  padding: 26px 36px 10px 30px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7F7F7F;
+}
+@media (max-width: 550px) {
+  .footer_text {
+    padding: 15px 30px 10px 30px;
+  }
+}
+.footer_text span {
+  font-family: Blogger Sans;
+  text-decoration: underline;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #8F8F8F;
+}
+.footer_text:after {
+  content: "";
+  margin: 0 auto;
+  width: 540px;
+  height: 1px;
+  background: #E7E7E7;
+  display: inline-block;
+}
+@media (max-width: 667px) {
+  .footer_text:after {
+    max-width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .footer_text:after {
+    max-width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .footer_text:after {
+    max-width: 100%;
+  }
+}
+.footer_prova {
+  padding: 10px 0px 0px 0px;
+  margin: 0 auto;
+  height: 32px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #7F7F7F;
+}
+@media (max-width: 425px) {
+  .footer_prova {
+    padding: 5px 60px;
+    text-align: center;
+  }
+}
+.social_row {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 667px) {
+  .social_row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.social_body {
+  display: flex;
+  margin: 0px 0px 0px 30px;
+}
+@media (max-width: 667px) {
+  .social_body {
+    margin: 0;
+  }
+}
+.social_whatsapp {
+  padding: 7px 0px 0px 8px;
+}
+.social_telegram {
+  padding: 9px 0px 0px 7px;
+}
+.social_vk {
+  padding: 11px 0px 0px 7px;
+}
+.social_facebook {
+  padding: 10px 0px 0px 10px;
+}
+.social_market {
+  margin: 0px 30px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 667px) {
+  .social_market {
+    margin: 0;
+  }
+}
+.social_google {
+  padding: 0px 15px 0px 0px;
+}
+.social_google img {
+  max-width: 120px;
+}
+.social_apple img {
+  max-width: 120px;
+}
+
+.RR {
+  margin: 5px 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #8F8F8F;
+  box-sizing: border-box;
+}
